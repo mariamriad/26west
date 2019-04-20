@@ -1,0 +1,129 @@
+/* General */
+body.login {
+  background-color: #fff;
+}
+
+/* Messages */
+.login #login_error, .login .message, .login .success {
+  box-shadow: none;
+  border: none;
+  padding: 24px;
+  color: red;
+  margin-bottom: 0;
+}
+
+/* Login form */
+body.login div#login form#loginform {
+  box-shadow: none;
+}
+
+.login label {
+    font-size: 0;
+}
+
+body.login div#login form#loginform input {
+  background-color: #fff;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px #E6E6E6 solid;
+  font-size: 14px;
+  color: #313131;
+  height: 44px;
+  padding: 10px;
+  margin: 0;
+}
+
+::placeholder {
+  color: #A1A1A1;
+}
+
+body.login div#login form#loginform input:focus {
+  border-bottom: none;
+  background-color: #F7F7F7;
+  border-radius: 3px;
+}
+
+body.login div#login form#loginform p.forgetmenot input#rememberme {
+  height: 18px;
+  width: 18px;
+  margin: 25px 0px;
+  background-color: #F7F7F7;
+  border-radius: 3px;
+  border-bottom: none;
+}
+
+input[type=checkbox]:checked:before {
+  color: #313131;
+}
+
+/* Submit button */
+body.login div#login form#loginform p.submit input#wp-submit {
+  color: #A1A1A1;
+  width: 100%;
+  text-shadow: none;
+  background-color: #e6e6e6;
+}
+
+body.login div#login form#loginform p.submit input#wp-submit:hover {
+  background-color: #303030;
+  color: #e6e6e6;
+  transition: 500ms ease-out;
+}
+
+/* Links */
+body.login div#login p#nav a,
+body.login div#login p#backtoblog a {
+  color: #A1A1A1!important; /* Your link color. */
+}
+
+body.login div#login p#nav a:hover,
+body.login div#login p#backtoblog a:hover {
+  color: #767676!important; /* Your link color. */
+}
+
+body.login div#login p#nav,
+body.login div#login p#backtoblog {
+  text-align: center;
+}
+
+body.login div#login p#backtoblog {
+  font-size: 12px;
+}
+
+/* Lost password form */
+.login form {
+  box-shadow: none;
+}
+
+input#user_login.input {
+  background-color: #fff;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px #E6E6E6 solid;
+  font-size: 14px;
+  color: #313131;
+  height: 44px;
+  padding: 10px;
+}
+
+input#user_login.input:focus {
+  border-bottom: none;
+  background-color: #F7F7F7;
+  border-radius: 3px;
+}
+
+input.button-primary {
+  height: 44px !important;
+  color: #A1A1A1 !important;
+  width: 100%;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  background-color: #e6e6e6 !important;
+  border: none !important;
+}
+
+input.button-primary:hover {
+  background-color: #303030 !important;
+  color: #e6e6e6 !important;
+  transition: 500ms ease-out;
+}

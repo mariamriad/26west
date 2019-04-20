@@ -1,0 +1,109 @@
+/* General styles */
+body {
+  background-color: #F2F2F2;
+  font-family: 'Karla', sans-serif;
+}
+
+/* Sidebar styles */
+div#adminmenuback, div.wp-menu-name, .dashicons-admin-appearance {
+  background-color: #EAEAEA;
+  color: #767676;
+  text-transform: uppercase;
+}
+
+div#adminmenuback, div.wp-menu-name:hover {
+  color: #313131;
+}
+
+#adminmenu div.wp-menu-image:before {
+  color: #767676 !important;
+}
+
+#adminmenu a, #adminmenu .wp-submenu-head, #adminmenu a.menu-top {
+  font-size: 14px !important;
+}
+
+#adminmenu li a:focus div.wp-menu-image #adminmenu li.opensub div.wp-menu-image, #adminmenu li:hover div.wp-menu-image {
+  color: #313131;
+}
+
+ul.wp-submenu.wp-submenu-wrap {
+  background-color: #EAEAEA !important;
+}
+
+ul.wp-submenu.wp-submenu-wrap a {
+  color: #767676 !important;
+}
+
+ul.wp-submenu.wp-submenu-wrap a:hover {
+  color: #313131 !important;
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  width: 180px;
+}
+
+div#adminmenuwrap, ul#adminmenu {
+  background-color: #EAEAEA !important;
+}
+
+a.wp-first-item.current {
+  color: #313131 !important;
+}
+
+#adminmenu .wp-not-current-submenu li>a, .folded #adminmenu .wp-has-current-submenu li>a {
+  padding-left: 28px;
+}
+
+/* Top admin bar styles */
+div#wpadminbar {
+  background-color: #EAEAEA !important;
+}
+
+li#wp-admin-bar-wp-logo {
+  display: none;
+}
+
+a.ab-item::before {
+  display: none;
+}
+
+#wp-admin-bar-site-name a {
+  padding-left: 25px;
+  text-transform: uppercase !important;
+}
+
+a.ab-item, span.ab-icon, span.ab-label.awaiting-mod.pending-count {
+color: #767676 !important;
+}
+
+span.ab-icon {
+  display: none;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+  background-color: #EAEAEA !important;
+  color: #767676 !important;
+}
+
+.ab-submenu {
+  background-color: #EAEAEA !important;
+}
+
+.ab-submenu a {
+  color: #767676 !important;
+}
+
+.ab-submenu a:hover {
+  color: #313131 !important;
+}
+
+/* Main body styles */
+div#wpbody-content {
+  padding-left: 20px;
+  max-width: 1200px !important;
+}
+
+span#footer-thankyou {
+  font-size: 0;
+}

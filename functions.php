@@ -126,6 +126,12 @@ function twentysixwest_scripts() {
 
 	wp_enqueue_script( 'twentysixwest-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	// Google Fonts
+	wp_enqueue_style('twentysixwest-googlefonts', 'https://fonts.googleapis.com/css?family=Karla:400,700|Oswald:400,700');
+
+	// Font Awesome
+	wp_enqueue_style('twentysixwest-fontawesome', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -159,3 +165,85 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// CUSTOM FUNCTIONS
+/**
+ * Load custom admin stylesheet.
+ */
+function load_custom_wp_admin_style() {
+        wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/admin-style.css', false, '1.0.0' );
+        wp_enqueue_style( 'custom_wp_admin_css' );
+}
+add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
+
+/**
+ * Load custom site logo on login screen.
+ */
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/site-login-logo.png);
+						height:65px;
+						width:320px;
+						background-size: 320px 65px;
+						background-repeat: no-repeat;
+        		padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+
+/**
+ * Link to to your site through logo on login screen.
+ */
+ function my_login_logo_one() {
+ ?>
+ <style type="text/css">
+		 body.login div#login h1 a {
+		 background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/26west-logo.svg);
+		 margin-bottom: 0;
+		 padding-bottom: 0;
+		 }
+ </style>
+ <?php
+ } add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+
+/**
+ * Load custom login stylesheet.
+ */
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
+    // wp_enqueue_script( 'custom-login', get_stylesheet_directory_uri() . '/js/style-login.js' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
+
+/**
+ * Load custom login jQuery.
+ */
+add_action( 'login_enqueue_scripts', 'wpse_login_enqueue_scripts', 10 );
+function wpse_login_enqueue_scripts() {
+    wp_enqueue_script( 'style-login.js', get_template_directory_uri() . '/js/style-login.js', array( 'jquery' ), 1.0 );
+}
+
+/**
+ * Remove shake on login stylesheet.
+ */
+function wpb_remove_loginshake() {
+    remove_action('login_head', 'wp_shake_js', 12);
+}
+add_action('login_head', 'wpb_remove_loginshake');
+
+$args = array(
+    'echo' => false,
+);
+
+/**
+ * SVG image support.
+ */
+function add_file_types_to_uploads($file_types){
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+    }
+add_action('upload_mimes', 'add_file_types_to_uploads');
