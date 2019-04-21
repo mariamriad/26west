@@ -4,6 +4,10 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
+#wpwrap {
+  font-family: 'Karla', sans-serif !important;
+}
+
 /* Sidebar styles */
 div#adminmenuback, div.wp-menu-name, .dashicons-admin-appearance {
   background-color: #EAEAEA;
@@ -12,7 +16,7 @@ div#adminmenuback, div.wp-menu-name, .dashicons-admin-appearance {
 }
 
 div#adminmenuback, div.wp-menu-name:hover {
-  color: #313131;
+  color: #313131 !important;
 }
 
 #adminmenu div.wp-menu-image:before {
@@ -39,10 +43,6 @@ ul.wp-submenu.wp-submenu-wrap a:hover {
   color: #313131 !important;
 }
 
-#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
-  width: 180px;
-}
-
 div#adminmenuwrap, ul#adminmenu {
   background-color: #EAEAEA !important;
 }
@@ -55,25 +55,36 @@ a.wp-first-item.current {
   padding-left: 28px;
 }
 
+#collapse-button .collapse-button-icon:after, #collapse-button .collapse-button-label {
+  color: #767676 !important;
+}
+
+#collapse-button:hover, #collapse-button .collapse-button-label:hover {
+  color: #313131 !important;
+}
+
 /* Top admin bar styles */
 div#wpadminbar {
   background-color: #EAEAEA !important;
 }
 
-li#wp-admin-bar-wp-logo {
-  display: none;
+div#wpadminbar p, div#wpadminbar a, span.ab-label, span.display-name {
+  font-family: 'Karla', sans-serif !important;
+}
+
+span.ab-label:before {
+  content: "+ ";
 }
 
 a.ab-item::before {
   display: none;
 }
 
-#wp-admin-bar-site-name a {
-  padding-left: 25px;
-  text-transform: uppercase !important;
+a.ab-item {
+  margin-left: 3px !important;
 }
 
-a.ab-item, span.ab-icon, span.ab-label.awaiting-mod.pending-count {
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, span.ab-item {
 color: #767676 !important;
 }
 
@@ -84,6 +95,10 @@ span.ab-icon {
 #wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
   background-color: #EAEAEA !important;
   color: #767676 !important;
+}
+
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+    color: #767676 !important;
 }
 
 .ab-submenu {
@@ -98,10 +113,76 @@ span.ab-icon {
   color: #313131 !important;
 }
 
+#wpadminbar #wp-admin-bar-my-account.with-avatar>.ab-empty-item img, #wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
+  border: none;
+  border-radius: 50%;
+}
+
+#wp-admin-bar-user-info .avatar {
+  border-radius: 50%;
+}
+
+input[type=checkbox]:checked:before {
+  color: #313131 !important;
+}
+
+.contextual-help-tabs a, .contextual-help-sidebar a {
+  color: #767676 !important;
+}
+
+li#tab-link-overview.active {
+  border-left: 2px solid #313131 !important;
+}
+
+span.display-name, a.ab-item {
+  font-weight: bold !important;
+  color: #313131 !important;
+}
+
 /* Main body styles */
-div#wpbody-content {
-  padding-left: 20px;
-  max-width: 1200px !important;
+div#wpbody-content h1 {
+  text-transform: uppercase;
+}
+
+.button.button-hero, .button-primary, .editor-post-publish-button, .editor-post-trash, .editor-post-preview, .page-title-action, .action, #post-query-submit, #search-submit, .components-button.editor-post-publish-panel__toggle, .cancel, .media-button, .submit-add-to-menu, .delete, .change-theme, .upload-button, .remove-button {
+  border: none !important;
+  text-transform: uppercase;
+  background-color: #E5E5E5 !important;
+  color: #313131 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.button.button-hero:hover, .button-primary:hover, .editor-post-publish-button:hover, .editor-post-trash:hover, .editor-post-preview:hover, .page-title-action:hover, .action:hover, #post-query-submit:hover, #search-submit:hover, .components-button.editor-post-publish-panel__toggle:hover, .cancel:hover, .media-button:hover, .submit-add-to-menu:hover, .delete:hover, .change-theme:hover, .upload-button:hover, .remove-button:hover {
+  background-color: #313131 !important;
+  color: #EAEAEA !important;
+}
+
+a, .components-button.is-link, .components-button.is-tertiary, .button-link {
+  color: #767676 !important;
+  cursor: pointer;
+}
+
+a:hover, .components-button.is-link:hover, .components-button.is-tertiary:hover, .button-link:hover {
+  color: #313131 !important;
+}
+
+textarea {
+  font-family: 'Karla', !important;
+}
+
+.edit-post-sidebar__panel-tab.is-active {
+  border-bottom: 3px solid #313131 !important;
+}
+
+.edit-post-sidebar input[type=checkbox]:checked {
+  background-color: #fff !important;
+  border: 1px solid #000 !important;
+}
+
+.editor-post-title__block .editor-post-title__input,
+.edit-post-visual-editor, .edit-post-visual-editor p, .editor-default-block-appender__content {
+    font-family: 'Karla', sans-serif !important;
 }
 
 span#footer-thankyou {

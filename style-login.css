@@ -74,6 +74,7 @@ body.login div#login form#loginform p.submit input#wp-submit:hover {
 body.login div#login p#nav a,
 body.login div#login p#backtoblog a {
   color: #A1A1A1!important; /* Your link color. */
+  font-family: 'Karla', sans-serif !important;
 }
 
 body.login div#login p#nav a:hover,

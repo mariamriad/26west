@@ -238,6 +238,34 @@ $args = array(
 );
 
 /**
+ * Replace 'howdy' in WordPress.
+ */
+function replace_howdy( $wp_admin_bar ) {
+    $my_account=$wp_admin_bar->get_node('my-account');
+    $newtitle = str_replace( 'Howdy,', 'Logged in as', $my_account->title );
+    $wp_admin_bar->add_node( array(
+        'id' => 'my-account',
+        'title' => $newtitle,
+    ) );
+}
+add_filter( 'admin_bar_menu', 'replace_howdy',25 );
+
+/**
+ * Remove WordPress logo, comments, and new from admin bar.
+ */
+function example_admin_bar_remove_logo() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu( 'wp-logo' );
+}
+add_action( 'wp_before_admin_bar_render', 'example_admin_bar_remove_logo', 0 );
+
+function remove_comments(){
+        global $wp_admin_bar;
+        $wp_admin_bar->remove_menu('comments');
+}
+add_action( 'wp_before_admin_bar_render', 'remove_comments' );
+
+/**
  * SVG image support.
  */
 function add_file_types_to_uploads($file_types){
