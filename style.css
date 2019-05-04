@@ -186,7 +186,7 @@ table { margin: 0 0 1.5em; width: 100%; }
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-.waitlist, button, input[type="button"], input[type="reset"], input[type="submit"] { border: 1px solid; border-color: #fff; background: #fff; color: #000; font-size: 12px; font-size: 0.75rem; line-height: 1; padding: .6em 1em .4em; }
+.waitlist, button, input[type="button"], input[type="reset"], input[type="submit"] { background: #fff; color: #000; font-size: 16px; font-size: 1rem; padding: 10px; }
 
 .waitlist:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover { border-color: #ccc #bbb #aaa; }
 
@@ -233,7 +233,7 @@ a:hover, a:active { outline: 0; }
 
 .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul { left: auto; }
 
-.main-navigation li { float: left; position: relative; padding: 20px; }
+.main-navigation li { float: left; position: relative; margin: 20px; }
 
 .main-navigation a { display: block; text-decoration: none; color: #fff; }
 

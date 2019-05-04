@@ -3,13 +3,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
+	// border: 1px solid;
+	// border-color: $color__border-button;
 	background: $color__background-button;
 	color: #000;
-	@include font-size(0.75);
-	line-height: 1;
-	padding: .6em 1em .4em;
+	@include font-size(1);
+	// line-height: 1;
+	// padding: .6em 1em .4em;
+	padding: 10px;
 
 	&:hover {
 		border-color: $color__border-button-hover;
