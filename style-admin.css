@@ -11,16 +11,16 @@ body {
 /* Sidebar styles */
 div#adminmenuback, div.wp-menu-name, .dashicons-admin-appearance {
   background-color: #EAEAEA;
-  color: #767676;
+  color: #313131;
   text-transform: uppercase;
 }
 
 div#adminmenuback, div.wp-menu-name:hover {
-  color: #313131 !important;
+  color: #767676 !important;
 }
 
 #adminmenu div.wp-menu-image:before {
-  color: #767676 !important;
+  color: #313131 !important;
 }
 
 #adminmenu a, #adminmenu .wp-submenu-head, #adminmenu a.menu-top {
@@ -136,6 +136,15 @@ li#tab-link-overview.active {
 
 span.display-name, a.ab-item {
   font-weight: bold !important;
+  color: #313131 !important;
+}
+
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu .wp-menu-arrow, #adminmenu .wp-menu-arrow div, #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top, .folded #adminmenu li.wp-has-current-submenu {
+  background: #fff !important;
+}
+
+#wpadminbar #wp-admin-bar-my-sites a.ab-item, #wpadminbar #wp-admin-bar-site-name a.ab-item {
+  font-family: 'Karla', sans-serif;
   color: #313131 !important;
 }
 
