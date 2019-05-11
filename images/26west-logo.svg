@@ -4,9 +4,10 @@
 	 viewBox="0 0 458.6 213.3" style="enable-background:new 0 0 458.6 213.3;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{font-family:'Oswald-Bold';}
-	.st2{font-size:108px;}
+	.st1{fill:#262A2B;}
+	.st2{font-family:'Oswald-Bold';}
+	.st3{font-size:108px;}
 </style>
 <rect x="54.1" y="63.3" class="st0" width="346" height="98.5"/>
-<text transform="matrix(1 0 0 1 54.0723 158.2551)" class="st1 st2">26WEST</text>
+<text transform="matrix(1 0 0 1 54.0723 158.2551)" class="st1 st2 st3">26WEST</text>
 </svg>

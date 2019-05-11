@@ -13,10 +13,12 @@ $color__link: #262A2B;
 $color__link-visited: #262A2B;
 $color__link-hover: #707070;
 $color__link-nav: #fff;
+$color__link-nav-hover: #ccc;
 $color__text-main: #404040;
 
-$color__border-button: #fff;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
+// $color__border-button: #fff;
+// $color__border-button-hover: #ccc #bbb #aaa;
+$color__background-button-hover: #ccc;
+$color__background-button-focus: #707070;
 $color__border-input: #ccc;
 $color__border-abbr: #666;

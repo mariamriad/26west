@@ -1,7 +1,5 @@
 .main-navigation {
 	clear: both;
-	// display: block;
-	// float: left;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -57,9 +55,15 @@
 		float: left;
 		position: relative;
 		margin: 20px;
+		padding: 10px;
 
-		&:hover > a,
-		&.focus > a {
+		&:first-of-type {
+			padding: 0;
+		}
+
+		&:hover:not(:first-of-type) > a,
+		&.focus:not(:first-of-type) > a {
+			color: $color__link-nav-hover;
 		}
 	}
 
@@ -71,6 +75,9 @@
 
 	.waitlist a {
 		color: #000;
+		&:hover {
+			color: $color__link;
+		}
 	}
 
 	.current_page_item > a,
