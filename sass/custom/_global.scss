@@ -1,10 +1,75 @@
 // Header
 .site-header {
-  background-color: $color__background-section;
+  background-color: $color__background-section !important;
   display: flex;
 
   .custom-logo {
     max-width: 150px;
     padding: 15px;
+  }
+}
+
+// Main
+.site-content {
+  max-width: 2000px;
+  padding: 0 1em;
+}
+
+// Footer
+footer {
+  background-color: $color__background-section;
+  color: #fff;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .nf-form-cont {
+    min-width: 300px;
+
+    .nf-form-fields-required {
+      display: none;
+    }
+
+    .ninja-forms-req-symbol {
+      color: $color__background-light-grey;
+    }
+
+    .nf-form-title h3 {
+      font-weight: normal !important;
+      font-size: 2em;
+    }
+
+    label {
+      font-weight: normal !important;
+      text-transform: uppercase;
+    }
+
+    input,
+    textarea {
+      border-radius: 0;
+    }
+  }
+
+  .col-2 {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+
+    .custom-logo {
+      max-width: 150px;
+      margin-top: 40px;
+    }
+
+    .copy {
+      margin-top: 10px;
+    }
   }
 }

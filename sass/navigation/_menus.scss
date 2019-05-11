@@ -90,10 +90,13 @@
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	// display: block;
+	// background: none;
+	// border: none;
+	display: none;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 980px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -120,5 +123,19 @@
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+// Responsive Menu Styles
+.responsive-menu-item-link {
+	text-transform: uppercase;
+}
+
+.responsive-menu-inner {
+	border-radius: 0 !important;
+
+	&::before,
+	&::after {
+		border-radius: 0 !important;
 	}
 }

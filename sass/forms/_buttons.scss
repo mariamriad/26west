@@ -12,11 +12,10 @@ input[type="submit"] {
 
 	&:hover {
 		background: $color__background-button-hover;
-		// color: black;
 	}
 
 	&:active,
 	&:focus {
-		// background-color: $color__background-button-focus;
+		background: $color__background-button-hover;
 	}
 }
