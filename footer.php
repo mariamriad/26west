@@ -27,8 +27,8 @@
 				<?php endif; ?>
 			</div>
 			<div class="site-info">
-				<p class="privacy"><a href="/credits/">Privacy policy</a></p>
-				<p class="copy">&copy; <?php echo date('Y'); ?> Pezzente Holdings Inc. <a href="/credits/">Site credits.</a></p>
+				<p class="footer-links"><a href="/privacy-policy/">Privacy policy</a>&nbsp; | &nbsp;<a href="/credits/">Site credits</a></p>
+				<p class="copy">&copy; <?php echo date('Y'); ?> Pezzente Holdings Inc.</p>
 			</div><!-- .site-info -->
 		</div><!-- .col-2 -->
 	</footer><!-- #colophon -->

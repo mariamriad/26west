@@ -1,7 +1,29 @@
+// General
+body {
+  min-height: calc(100vh - 500px);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400 !important;
+}
+
+h1 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
 // Header
 .site-header {
   background-color: $color__background-section !important;
   display: flex;
+  padding: 0 1em;
+  // height: 90px;
 
   .custom-logo {
     max-width: 150px;
@@ -12,16 +34,17 @@
 // Main
 .site-content {
   max-width: 2000px;
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 // Footer
 footer {
   background-color: $color__background-section;
   color: #fff;
-  padding: 0 1em;
+  padding: 0 2em;
   display: flex;
   justify-content: space-between;
+  height: 585px;
 
   a {
     color: #fff;
@@ -31,7 +54,7 @@ footer {
   }
 
   .nf-form-cont {
-    min-width: 300px;
+    width: 500px;
 
     .nf-form-fields-required {
       display: none;
@@ -39,11 +62,6 @@ footer {
 
     .ninja-forms-req-symbol {
       color: $color__background-light-grey;
-    }
-
-    .nf-form-title h3 {
-      font-weight: normal !important;
-      font-size: 2em;
     }
 
     label {
@@ -62,14 +80,23 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     text-align: right;
+    flex-grow: 1;
 
     .custom-logo {
-      max-width: 150px;
+      max-width: 125px;
       margin-top: 40px;
     }
 
-    .copy {
-      margin-top: 10px;
+    p.footer-links {
+      margin: 0;
     }
+
+    p.copy {
+      // margin-top: 10px;
+    }
+  }
+
+  .site-footer {
+    padding-bottom: 20px;
   }
 }
