@@ -12,9 +12,8 @@
 ?>
 
 	</div><!-- #content -->
-
 	<footer id="colophon" class="site-footer">
-		<div class="col-1 contact-us">
+		<div class="col-1 contact">
 			<?php echo do_shortcode('[ninja_form id=1]'); ?>
 		</div>
 		<div class="col-2">

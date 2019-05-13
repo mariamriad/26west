@@ -1,8 +1,19 @@
-// General
-body {
-  min-height: calc(100vh - 500px);
+// Header
+.site-header {
+  background-color: $color__background-section !important;
+  display: flex;
+  padding: 0 2em;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+
+  .custom-logo {
+    max-width: 150px;
+    padding: 15px;
+  }
 }
 
+// Headings
 h1,
 h2,
 h3,
@@ -14,47 +25,85 @@ h1 {
   font-size: 2.7em;
 }
 
+h2 {
+  font-size: 2.2em;
+}
+
 h3 {
   font-size: 2em;
 }
 
-// Header
-.site-header {
-  background-color: $color__background-section !important;
-  display: flex;
-  padding: 0 1em;
-  // height: 90px;
+// Main
+.entry-content {
+  max-width: 2000px;
+  padding: 0 3em;
+}
 
-  .custom-logo {
-    max-width: 150px;
-    padding: 15px;
+// Hero
+.hero-wrapper {
+  position: relative;
+}
+
+.hero-wrapper img {
+  margin-top: -100px;
+  width: 100%;
+  color: #fff;
+  z-index: -1;
+}
+
+.hero-overlay {
+  margin-top: -100px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(36, 36, 36, 0.8);
+}
+
+.hero-text {
+  position: absolute;
+  top: 25%;
+  padding: 0 3em;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color__link-nav-hover;
+    }
   }
 }
 
-// Main
-.site-content {
-  max-width: 2000px;
-  padding: 0 2em;
+// Notices
+.notice-wrapper {
+  display: flex;
 }
 
 // Footer
 footer {
   background-color: $color__background-section;
   color: #fff;
-  padding: 0 2em;
-  display: flex;
-  justify-content: space-between;
-  height: 585px;
+  padding: 3em;
 
   a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+
+    &:hover {
+      color: $color__link-nav-hover;
+    }
   }
 
   .nf-form-cont {
-    width: 500px;
+    .nf-form-title h3 {
+      padding-bottom: 40px;
+    }
 
     .nf-form-fields-required {
       display: none;
@@ -72,7 +121,26 @@ footer {
     input,
     textarea {
       border-radius: 0;
+      border: 3px solid $color__background-light-grey;
+      background-color: transparent;
+      resize: none;
+      color: #fff !important;
     }
+
+    ::placeholder {
+      color: #fff;
+    }
+
+    #nf-field-4 {
+      background-color: #fff;
+      color: $color__link !important;
+      border: none;
+    }
+
+    #nf-field-4:hover {
+      background-color: $color__background-button-hover;
+    }
+
   }
 
   .col-2 {
@@ -84,7 +152,7 @@ footer {
 
     .custom-logo {
       max-width: 125px;
-      margin-top: 40px;
+      margin: 100px 0 40px;
     }
 
     p.footer-links {
@@ -92,11 +160,27 @@ footer {
     }
 
     p.copy {
-      // margin-top: 10px;
+      margin: 0;
+      margin-top: 8px;
     }
   }
 
   .site-footer {
     padding-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  footer {
+    display: flex;
+    .col-1 {
+      width: 40%;
+    }
+
+    .col-2 {
+      .custom-logo {
+        margin: 0;
+      }
+    }
   }
 }

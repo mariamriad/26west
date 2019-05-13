@@ -275,3 +275,25 @@ function add_file_types_to_uploads($file_types){
     return $file_types;
     }
 add_action('upload_mimes', 'add_file_types_to_uploads');
+
+/**
+ * Rename blog post type (Posts) to Notices.
+ */
+add_action( 'init', 'cp_change_post_object' );
+function cp_change_post_object() {
+    $get_post_type = get_post_type_object('post');
+    $labels = $get_post_type->labels;
+        $labels->name = 'Notices';
+        $labels->singular_name = 'Notice';
+        $labels->add_new = 'Add Notice';
+        $labels->add_new_item = 'Add Notice';
+        $labels->edit_item = 'Edit Notice';
+        $labels->new_item = 'Notice';
+        $labels->view_item = 'View Notice';
+        $labels->search_items = 'Search Notices';
+        $labels->not_found = 'No Notices Found';
+        $labels->not_found_in_trash = 'No Notices found in Trash';
+        $labels->all_items = 'All Notices';
+        $labels->menu_name = 'Notices';
+        $labels->name_admin_bar = 'Notices';
+}
