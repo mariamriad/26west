@@ -40,7 +40,7 @@
 		</div>
 	</div><!-- .hero-wrapper -->
 
-	<div class="entry-content">
+	<div class="home-content">
 		<?php
 		the_content();
 
@@ -115,7 +115,7 @@
 			$description8 = get_sub_field('bike_storage_description');
 
 			$icon9 = get_sub_field('underground_parking_icon');
-			$description9 = get_sub_field('underground_parking_Description');
+			$description9 = get_sub_field('underground_parking_description');
 
 			?>
 			<div class="features-flex">

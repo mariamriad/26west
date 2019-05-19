@@ -383,6 +383,8 @@ embed, iframe, object { max-width: 100%; }
 
 @media only screen and (min-width: 900px) { .site-header { padding: 0 2em; } }
 
+@media only screen and (min-width: 1600px) { .site-header { padding: 0 7em; } }
+
 h1, h2, h3, h4 { font-weight: 400 !important; }
 
 h1 { font-size: 2.7em; }
@@ -391,9 +393,25 @@ h2 { font-size: 2.2em; }
 
 h3 { font-size: 2em; }
 
-.entry-content { max-width: 2000px; padding: 0 2rem; }
+.home-content, .page-content { max-width: 2000px; padding: 0 2rem; }
 
-@media only screen and (min-width: 900px) { .entry-content { padding: 0 3em; } }
+.page-content { max-width: 1000px; }
+
+.entry-title { padding-top: 2rem; }
+
+.entry-title a { text-decoration: none; }
+
+.page-title { padding-top: 4rem; }
+
+.page-header { margin-top: 5rem; margin-bottom: 5rem; }
+
+.custom-padding { padding-top: 9rem; }
+
+@media only screen and (min-width: 900px) { .home-content, .page-content { padding: 0 3em; } }
+
+@media only screen and (min-width: 1600px) { .home-content, .page-content { padding: 0 8em; } }
+
+.byline, .entry-footer { display: none; }
 
 .hero-wrapper { position: relative; width: 100%; height: 700px; }
 
@@ -409,7 +427,9 @@ h3 { font-size: 2em; }
 
 @media only screen and (min-width: 900px) { .hero-text { padding: 0 3em; } }
 
-@media only screen and (min-width: 800px) { .notice-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; }
+@media only screen and (min-width: 1600px) { .hero-text { padding: 0 8em; } }
+
+@media only screen and (min-width: 800px) { .notice-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; max-width: 1600px; }
   .notices { margin-right: 6rem; }
   .notices:last-of-type { margin: 0; } }
 
@@ -439,11 +459,15 @@ h3 { font-size: 2em; }
 
 @media only screen and (min-width: 900px) { .features-wrapper { padding: 0 3rem; } }
 
+@media only screen and (min-width: 1600px) { .features-wrapper { padding: 0 8rem; } }
+
 .map-section { padding: 5rem 2rem; }
 
 .map { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 
 @media only screen and (min-width: 900px) { .map-section { padding: 5rem 3rem; } }
+
+@media only screen and (min-width: 1600px) { .map-section { padding: 5rem 8rem; } }
 
 .partners { padding: 5rem 2rem; }
 
@@ -454,6 +478,8 @@ h3 { font-size: 2em; }
 .partners .partners-list p { font-size: 80%; padding-right: 2rem; }
 
 @media only screen and (min-width: 900px) { .partners { padding: 5rem 3rem; } }
+
+@media only screen and (min-width: 1600px) { .partners { padding: 5rem 8rem; } }
 
 footer { background-color: #262A2B; color: #fff; padding: 2rem; }
 
@@ -498,5 +524,7 @@ footer .site-footer { padding-bottom: 20px; }
   footer .col-2 .custom-logo { margin: 0; } }
 
 @media only screen and (min-width: 900px) { footer { padding: 3rem; } }
+
+@media only screen and (min-width: 1600px) { footer { padding: 8rem; } }
 
 /*# sourceMappingURL=../26west/sass/maps/style.css.map */

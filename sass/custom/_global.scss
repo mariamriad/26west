@@ -19,6 +19,12 @@
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .site-header {
+    padding: 0 7em;
+  }
+}
+
 // Headings
 h1,
 h2,
@@ -40,15 +46,51 @@ h3 {
 }
 
 // Main
-.entry-content {
+.home-content, .page-content {
   max-width: 2000px;
   padding: 0 2rem;
 }
 
+.page-content {
+  max-width: 1000px;
+}
+
+.entry-title {
+  padding-top: 2rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.page-title {
+  padding-top: 4rem;
+}
+
+.page-header {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.custom-padding {
+  padding-top: 9rem;
+}
+
 @media only screen and (min-width: 900px) {
-  .entry-content {
+  .home-content, .page-content {
     padding: 0 3em;
   }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-content, .page-content {
+    padding: 0 8em;
+  }
+}
+
+.byline,
+.entry-footer {
+  display: none;
 }
 
 // Hero
@@ -100,10 +142,17 @@ h3 {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .hero-text {
+    padding: 0 8em;
+  }
+}
+
 // Notices
 @media only screen and (min-width: 800px) {
   .notice-wrapper {
     display: flex;
+    max-width: 1600px;
   }
 
   .notices {
@@ -192,6 +241,12 @@ h3 {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .features-wrapper {
+    padding: 0 8rem;
+  }
+}
+
 // Map styles
 .map-section {
   padding: 5rem 2rem;
@@ -204,6 +259,12 @@ h3 {
 @media only screen and (min-width: 900px) {
   .map-section {
     padding: 5rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .map-section {
+    padding: 5rem 8rem;
   }
 }
 
@@ -229,6 +290,13 @@ h3 {
 @media only screen and (min-width: 900px) {
   .partners {
     padding: 5rem 3rem;
+  }
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .partners {
+    padding: 5rem 8rem;
   }
 }
 
@@ -337,5 +405,11 @@ footer {
 @media only screen and (min-width: 900px) {
   footer {
     padding: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  footer {
+    padding: 8rem;
   }
 }

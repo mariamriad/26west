@@ -122,9 +122,9 @@ add_action( 'widgets_init', 'twentysixwest_widgets_init' );
 function twentysixwest_scripts() {
 	wp_enqueue_style( 'twentysixwest-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'twentysixwest-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'twentysixwest-navigation', get_template_directory_uri() . '/js/js-min/navigation.min.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'twentysixwest-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'twentysixwest-skip-link-focus-fix', get_template_directory_uri() . '/js/js-min/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 	// Google Fonts
 	wp_enqueue_style('twentysixwest-googlefonts', 'https://fonts.googleapis.com/css?family=Karla:400,700|Oswald:400,700');
