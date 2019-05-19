@@ -118,74 +118,123 @@
 			$description9 = get_sub_field('underground_parking_Description');
 
 			?>
-			<div class="row1">
-					<div class="features">
-						<img src="<?php echo $icon; ?>" width="80px" />
-						<div class="content">
-							<p><?php echo $description; ?></p>
+			<div class="features-flex">
+
+							<div class="features">
+								<img src="<?php echo $icon; ?>" width="70px" />
+								<div class="content">
+									<p><?php echo $description; ?></p>
+								</div>
+							</div>
+
+							<div class="features">
+								<div class="content">
+									<p class="number"><?php echo $icon2; ?></p>
+									<p><?php echo $description2; ?></p>
+								</div>
+							</div>
+
+							<div class="features">
+								<div class="content">
+									<p class="number"><?php echo $icon3; ?></p>
+									<p><?php echo $description3; ?></p>
+								</div>
+							</div>
+
+							<div class="features">
+								<div class="content">
+									<p class="number"><?php echo $icon4; ?></p>
+									<p><?php echo $description4; ?></p>
+								</div>
+							</div>
+
+							<div class="features">
+								<p class="number"><?php echo $icon5; ?></p>
+								<div class="content">
+									<p><?php echo $description5; ?></p>
+								</div>
+							</div>
+
+						<div class="features">
+							<img src="<?php echo $icon6; ?>" width="70px" />
+							<div class="content">
+								<p><?php echo $description6; ?></p>
+							</div>
 						</div>
-					</div>
+
+						<div class="features">
+							<img src="<?php echo $icon7; ?>" width="65px" />
+							<div class="content">
+								<p><?php echo $description7; ?></p>
+							</div>
+						</div>
+
+						<div class="features">
+							<img src="<?php echo $icon8; ?>" width="80px" />
+							<div class="content">
+								<p><?php echo $description8; ?></p>
+							</div>
+						</div>
 
 					<div class="features">
-						<div class="content">
-							<p class="number"><?php echo $icon2; ?></p>
-							<p><?php echo $description2; ?></p>
-						</div>
-					</div>
-
-					<div class="features">
-						<div class="content">
-							<p class="number"><?php echo $icon3; ?></p>
-							<p><?php echo $description3; ?></p>
-						</div>
-					</div>
-
-					<div class="features">
-						<div class="content">
-							<p class="number"><?php echo $icon4; ?></p>
-							<p><?php echo $description4; ?></p>
-						</div>
-					</div>
-
-					<div class="features">
-						<p class="number"><?php echo $icon5; ?></p>
-						<div class="content">
-							<p><?php echo $description5; ?></p>
-						</div>
-					</div>
-			</div>
-
-			<div class="row2">
-					<div class="features">
-						<img src="<?php echo $icon6; ?>" width="80px" />
-						<div class="content">
-							<p><?php echo $description6; ?></p>
-						</div>
-					</div>
-
-					<div class="features">
-						<img src="<?php echo $icon7; ?>" width="80px" />
-						<div class="content">
-							<p><?php echo $description7; ?></p>
-						</div>
-					</div>
-
-					<div class="features">
-						<img src="<?php echo $icon8; ?>" width="80px" />
-						<div class="content">
-							<p><?php echo $description8; ?></p>
-						</div>
-					</div>
-
-					<div class="features">
-						<img src="<?php echo $icon9; ?>" width="80px" />
+						<img src="<?php echo $icon9; ?>" width="70px" />
 						<div class="content">
 							<p><?php echo $description9; ?></p>
 						</div>
 					</div>
+
+			</div><!-- .features-flex -->
+
+		<?php endwhile; ?>
+	<?php endif; ?>
+</div>
+
+<div class="map-section">
+		<?php if( have_rows('map_section') ):
+
+		while( have_rows('map_section') ): the_row();
+
+			// vars
+			$mapheading = get_sub_field('map_heading');
+			$mapsubheading = get_sub_field('map_subheading');
+
+			?>
+			<div>
+				<h2><?php echo $mapheading; ?></h2>
+				<p><?php echo $mapsubheading; ?></p>
 			</div>
 
 		<?php endwhile; ?>
+
+	<?php endif; ?>
+</div>
+
+<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.991449345273!2d-123.07458528449531!3d49.333380679336926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867022aebb8be9%3A0xfa02dc9f1d3cdae3!2s2601+Lonsdale+Ave%2C+North+Vancouver%2C+BC+V7N+3H7!5e0!3m2!1sen!2sca!4v1558290780550!5m2!1sen!2sca" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="partners">
+		<?php if( have_rows('partners') ):
+
+		while( have_rows('partners') ): the_row();
+
+			// vars
+			$partnersheading = get_sub_field('partners_heading');
+			$partnerssubheading = get_sub_field('partners_subheading');
+			$partnerslist = get_sub_field('partners_list');
+
+			?>
+			<div class="partners-heading">
+				<h2><?php echo $partnersheading; ?></h2>
+				<p><?php echo $partnerssubheading; ?></p>
+			</div>
+
+			<div class="partners-list">
+				<p><?php echo $partnerslist; ?></p>
+			</div>
+
+		<?php endwhile; ?>
+
 	<?php endif; ?>
 </div>
 

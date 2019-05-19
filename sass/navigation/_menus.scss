@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	z-index: 999;
 
 	ul {
 		display: none;
@@ -90,13 +91,10 @@
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	// display: block;
-	// background: none;
-	// border: none;
 	display: none;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1020px) {
 	.menu-toggle {
 		display: none;
 	}
