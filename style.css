@@ -235,15 +235,9 @@ a:hover, a:active { outline: 0; }
 
 .main-navigation li { float: left; position: relative; margin: 20px; padding: 10px; }
 
-.main-navigation li:first-of-type { padding: 0; }
-
-.main-navigation li:hover:not(:first-of-type) > a, .main-navigation li.focus:not(:first-of-type) > a { color: #ccc; }
+.main-navigation li:hover a, .main-navigation li.focus a { color: #ccc; }
 
 .main-navigation a { display: block; text-decoration: none; color: #fff; }
-
-.main-navigation .waitlist a { color: #000; }
-
-.main-navigation .waitlist a:hover { color: #262A2B; }
 
 /* Small menu. */
 .menu-toggle, .main-navigation.toggled ul { display: none; }
@@ -377,13 +371,19 @@ embed, iframe, object { max-width: 100%; }
 /*--------------------------------------------------------------
 # Custom
 --------------------------------------------------------------*/
-.site-header { background-color: #262A2B !important; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 1em; width: 100%; position: fixed; z-index: 9999; }
+.site-header { background-color: #262A2B !important; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 0 1rem; width: 100%; position: fixed; z-index: 9999; }
 
 .site-header .custom-logo { max-width: 150px; padding: 15px; }
 
-@media only screen and (min-width: 900px) { .site-header { padding: 0 2em; } }
+@media only screen and (min-width: 900px) { .site-header { padding: 0 2rem; } }
 
-@media only screen and (min-width: 1600px) { .site-header { padding: 0 7em; } }
+@media only screen and (min-width: 1600px) { .site-header { padding: 0 7rem; } }
+
+.content-custom { padding: 0 2rem; }
+
+@media only screen and (min-width: 900px) { .content-custom { padding: 0 3rem; } }
+
+@media only screen and (min-width: 1600px) { .content-custom { padding: 0 8rem; } }
 
 h1, h2, h3, h4 { font-weight: 400 !important; }
 
@@ -397,7 +397,7 @@ h3 { font-size: 2em; }
 
 .page-content { max-width: 1000px; }
 
-.entry-title { padding-top: 2rem; }
+.entry-title { padding-top: 8rem; padding-bottom: 4rem; }
 
 .entry-title a { text-decoration: none; }
 
@@ -461,7 +461,9 @@ h3 { font-size: 2em; }
 
 @media only screen and (min-width: 1600px) { .features-wrapper { padding: 0 8rem; } }
 
-.map-section { padding: 5rem 2rem; }
+#location { padding-bottom: 2rem; }
+
+.map-section { padding: 0 2rem 5rem 2rem; }
 
 .map { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 

@@ -10,7 +10,7 @@
  */
 
 ?>
-
+	<div id="#contact">
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer">
 		<div class="col-1 contact">

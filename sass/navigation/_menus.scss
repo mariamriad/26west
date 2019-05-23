@@ -58,12 +58,12 @@
 		margin: 20px;
 		padding: 10px;
 
-		&:first-of-type {
-			padding: 0;
-		}
+		// &:first-of-type {
+		// 	padding: 0;
+		// }
 
-		&:hover:not(:first-of-type) > a,
-		&.focus:not(:first-of-type) > a {
+		&:hover a,
+		&.focus a {
 			color: $color__link-nav-hover;
 		}
 	}
@@ -74,12 +74,12 @@
 		color: $color__link-nav;
 	}
 
-	.waitlist a {
-		color: #000;
-		&:hover {
-			color: $color__link;
-		}
-	}
+	// .waitlist a {
+	// 	color: #000;
+	// 	&:hover {
+	// 		color: $color__link;
+	// 	}
+// }
 
 	.current_page_item > a,
 	.current-menu-item > a,

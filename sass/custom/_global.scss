@@ -2,7 +2,7 @@
 .site-header {
   background-color: $color__background-section !important;
   display: flex;
-  padding: 0 1em;
+  padding: 0 1rem;
   width: 100%;
   position: fixed;
   z-index: 9999;
@@ -15,13 +15,30 @@
 
 @media only screen and (min-width: 900px) {
   .site-header {
-    padding: 0 2em;
+    padding: 0 2rem;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .site-header {
-    padding: 0 7em;
+    padding: 0 7rem;
+  }
+}
+
+// Page padding
+.content-custom {
+  padding: 0 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .content-custom {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .content-custom {
+    padding: 0 8rem;
   }
 }
 
@@ -56,7 +73,8 @@ h3 {
 }
 
 .entry-title {
-  padding-top: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 
   a {
     text-decoration: none;
@@ -248,8 +266,12 @@ h3 {
 }
 
 // Map styles
+#location {
+  padding-bottom: 2rem;
+}
+
 .map-section {
-  padding: 5rem 2rem;
+   padding: 0 2rem 5rem 2rem;
 }
 
 .map {

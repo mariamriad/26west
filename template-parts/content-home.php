@@ -11,7 +11,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<p></p>
+		<br>
+		<br>
+		<br>
 	</header><!-- .entry-header -->
 
 	<?php twentysixwest_post_thumbnail(); ?>
@@ -50,6 +53,8 @@
 		) );
 		?>
 
+		<br>
+		<br>
 		<h2>The latest updates <br>on <strong>26WEST.</strong></h2>
 		<div class="notice-wrapper">
 		<?php
@@ -188,6 +193,8 @@
 		<?php endwhile; ?>
 	<?php endif; ?>
 </div>
+
+<div id="location"></div>
 
 <div class="map-section">
 		<?php if( have_rows('map_section') ):
